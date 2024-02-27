@@ -1,1 +1,19 @@
+	import javax.swing.JOptionPane;
+	public class Exercicio1 {
+	    public static void main(String[] args) {
+	        int num1, num2, soma;
+
+	        // Solicita ao usuário para digitar os números
+	        num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o primeiro número:"));
+	        num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o segundo número:"));
+
+	        // Realiza a soma
+	        soma = num1 + num2;
+
+	        // Exibe o resultado
+	        JOptionPane.showMessageDialog(null, "A soma dos números é: " + soma);
+	    }
+	}
+
+
 
