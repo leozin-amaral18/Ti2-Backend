@@ -1,1 +1,30 @@
-
+    	System.out.println("\n*****Excluir usuário*****");
+        
+        System.out.print("Informe o código do usuário a ser excluído: ");
+        codigo = sc.nextInt();
+        
+        System.out.println( "Tem certeza que deseja excluir o usuário? (S/N): " );
+        confirmar = sc.next().charAt( 0 );
+        
+        if( confirmar == 'S' || confirmar == 's' )
+        {
+        	if ( usuarioDAO.delete(codigo) ) 
+        	{
+        		System.out.println("Usuário excluído com sucesso.");
+        	} else 
+        	{
+        		System.out.println("Falha ao excluir usuário.");
+        	} // end if
+        }
+        else if( confirmar == 'N' || confirmar == 'n' )
+        {
+        	System.out.println( "\nExclusao cancelada." );
+        }
+        else
+        {
+        	System.out.println( "\nERRO: Opcao invalida" );
+        } // end if
+        
+    } // end excluirUsuario ( )
+	
+} // end class
