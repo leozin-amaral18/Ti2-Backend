@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Garrafas</title>
+    <link rel="stylesheet" href="style (1).css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Garrafa</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">Cadastro</a>
+            <a href="#"></a>
+        </nav>
+    </header>
+
+    <!-- Adicionar -->
+    <div class="wrapper">
+        <div class="form-box">
+            <h2>Adicionar</h2>
+            <form action="/inserir_garrafa" method="post">
+                <div class="box">
+                    <span class="icon"><ion-icon name="color-fill-outline"></ion-icon></span><br>
+                    <input type="text" name="cor">
+                    <label>Cor</label>
+                </div>
+                <div class="box">
+                    <span class="icon"><ion-icon name="cash-outline"></ion-icon></span><br>
+                    <input type="text" name="preco">
+                    <label>Preço</label>
+                </div>
+                <div class="box">
+                    <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span><br>
+                    <input type="text" name="marca">
+                    <label>Marca</label>
+                </div>
+                <button type="submit" class="btn">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Remover -->
+    <div class="wrapper">
+        <div class="form-box">
+            <h2>Remover</h2>
+            <form action="/remover_garrafa" method="post">
+                <div class="box">
+                    <span class="icon"><ion-icon name="remove-circle-outline"></ion-icon></span><br>
+                    <input type="text" name="id">
+                    <label>Id</label>
+                </div>
+                <button type="submit" class="btn">Remover</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Atualizar -->
+    <div class="wrapper">
+        <div class="form-box">
+            <h2>Update</h2>
+            <form action="/atualizar_garrafa" method="post">
+                <div class="box">
+                    <span class="icon"><ion-icon name="albums-outline"></ion-icon></span><br>
+                    <input type="text" name="id">
+                    <label>Id</label>
+                </div>
+                <div class="box">
+                    <span class="icon"><ion-icon name="color-fill-outline"></ion-icon></span><br>
+                    <input type="text" name="cor">
+                    <label>Cor</label>
+                </div>
+                <div class="box">
+                    <span class="icon"><ion-icon name="cash-outline"></ion-icon></span><br>
+                    <input type="text" name="preco">
+                    <label>Preço</label>
+                </div>
+                <div class="box">
+                    <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span><br>
+                    <input type="text" name="marca">
+                    <label>Marca</label>
+                </div>
+                <button type="submit" class="btn">Atualizar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Listagem -->
+    <div class="wrapper">
+        <div class="form-box">
+            <h2>Listagem</h2>
+            <form action="/listar_garrafas" method="post">
+                <div class="box">
+                    <span class="icon"><ion-icon name="albums-outline"></ion-icon></span><br>
+                    <input type="text" name="id1">
+                    <label>Id 1</label>
+                </div>
+                <div class="box">
+                    <span class="icon"><ion-icon name="color-fill-outline"></ion-icon></span><br>
+                    <input type="text" name="id2">
+                    <label>Id 2</label>
+                </div>
+                <button type="submit" class="btn">Listar</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
